@@ -1,0 +1,17 @@
+{
+  "name": "flappy-bird-game",
+  "version": "1.0.0",
+  "description": "Optimized Flappy Bird game with leaderboard",
+  "main": "index.html",
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build required'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["game", "flappy-bird", "javascript", "html5", "canvas"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Flappy Bird - Leaderboard Edition</title>
+    <meta name="description" content="Play the classic Flappy Bird game with global leaderboard">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="instructions">
+            Press Space to flap!<br>Avoid the pipes!
+        </div>
+        <div id="gameOverScreen">
+            <h2>Game Over!</h2>
+            <p id="finalScore">Score: 0</p>
+            <p id="bestScore">Best: 0</p>
+            <div id="highScoreForm" style="display:none">
+                <input type="text" id="playerName" placeholder="Enter your name" maxlength="20" autocomplete="off">
+                <button id="submitScore">Submit to Leaderboard</button>
+            </div>
+            <button id="restartBtn">Play Again</button>
+            <button id="showLeaderboard">View Leaderboard</button>
+        </div>
+        <div id="leaderboardScreen" style="display:none">
+            <h2>🏆 Leaderboard</h2>
+            <div id="leaderboardList">Loading...</div>
+            <button id="closeLeaderboard">Close</button>
+        </div>
+    </div>
+</body>
+</html>
